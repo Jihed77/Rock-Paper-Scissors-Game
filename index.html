@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Rock Paper Scissors Game</h1>
+        </div>
+
+        <div class="game-info">
+            <h2>Your choice: <span id="user-choice"></span></h2>
+            <h2>Computer choice: <span id="computer-choice"></span></h2>
+            <h2>Result: <span id="result"></span></h2>
+        </div>
+
+        <div class="buttons">
+            <button id="rock" onclick="selectChoice(this.id)"><i class="fa-solid fa-hand-back-fist"></i> Rock</button>
+            <button id="paper" onclick="selectChoice(this.id)"><i class="fa-solid fa-hand"></i> Paper</button>
+            <button id="scissors" onclick="selectChoice(this.id)"><i class="fa-solid fa-hand-scissors"></i>
+                Scissors</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
